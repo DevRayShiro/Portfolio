@@ -1,0 +1,244 @@
+body {
+    background-color:#4F4A45;
+    display:flex;
+    flex-direction:column;
+    font-family:'Avenir',sans-serif;
+    height:100vh;
+    margin:0;
+    padding:0
+    }
+    
+    .nav {
+    background-color:#ED7D31;
+    height:50px;
+    left:0;
+    position:fixed;
+    top:0;
+    width:100%
+    }
+    
+    .navbar-list {
+    display:flex;
+    flex-direction:row;
+    flex-flow:wrap
+    }
+    
+    .navbar-list li {
+    list-style:none;
+    margin-bottom:20px;
+    margin-right:50px
+    }
+    
+    a {
+    color:#F6F1EE;
+    font-weight:700;
+    text-decoration:none
+    }
+    
+    .container {
+    display:flex;
+    flex-direction:column
+    }
+    
+    .hero {
+    align-items:center;
+    background-image:url(./assets/182428240217.jpg);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    min-height:500px;
+    text-align:center;
+    width:100%
+    }
+    
+    h1 {
+    color:#F6F1EE;
+    font-size:50px
+    }
+    
+    h2 {
+    color:#F6F1EE;
+    font-size:40px
+    }
+    
+    .about {
+    display:grid;
+    gap:20px;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:auto auto;
+    height:auto;
+    padding:20px
+    }
+    
+    .about h2 {
+    margin:0
+    }
+    
+    .about p {
+    color:#F6F1EE;
+    font-size:20px;
+    text-align:left
+    }
+    
+    .about img {
+    align-self:center;
+    border:5px solid #ED7D31;
+    border-radius:10px;
+    grid-row:1 / span 2;
+    max-width:100%
+    }
+    
+    .experience {
+    align-items:center;
+    background-color:#6C5F5B;
+    color:#F6F1EE;
+    display:grid;
+    gap:20px;
+    grid-template-columns:1fr 2fr;
+    padding:20px;
+    text-align:left
+    }
+    
+    .experience h2 {
+    display:flex;
+    font-size:40px;
+    justify-content:center;
+    margin:0
+    }
+    
+    .experience .job {
+    display:flex;
+    font-size:24px;
+    justify-content:center;
+    margin:20px 0
+    }
+    
+    .experience ul {
+    display:flex;
+    flex-direction:column;
+    font-size:16px;
+    gap:5px;
+    justify-items:center;
+    list-style-type:disc;
+    margin-left:300px;
+    padding:0
+    }
+    
+    .showcase {
+    background-color:#4F4A45;
+    color:#F6F1EE;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+    text-align:center;
+    width:100%
+    }
+    
+    .showcase h2 {
+    align-items:center;
+    display:flex;
+    font-size:40px;
+    height:100%;
+    justify-content:flex-start;
+    margin-left:150px;
+    padding:20px
+    }
+    
+    .work {
+    align-items:center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around
+    }
+    
+    .work-item {
+    align-items:center;
+    display:flex;
+    flex-direction:column
+    }
+    
+    .work-item a {
+    color:#F6F1EE;
+    text-decoration:none
+    }
+    
+    .work-item h3 {
+    font-size:24px;
+    margin:10px 0
+    }
+    
+    .work-item p {
+    font-size:16px
+    }
+    
+    .work img {
+    border:5px solid #ED7D31;
+    height:150px;
+    width:250px
+    }
+    
+    .contact {
+    background-image:url(./assets/182428240217.jpg);
+    color:#F6F1EE;
+    padding:40px;
+    text-align:center
+    }
+    
+    .contact h2 {
+    font-size:40px;
+    margin:0;
+    padding:20px
+    }
+    
+    .contact p {
+    font-size:20px
+    }
+    
+    footer {
+    background-color:#6C5F5B;
+    color:#F6F1EE;
+    font-size:16px;
+    padding:10px 0;
+    text-align:center
+    }
+    
+    @media screen and (max-width: 1200px) {
+    .experience ul {
+    margin-left:0
+    }
+    }
+    
+    @media screen and (max-width: 760px) {
+    .nav {
+    height:200px
+    }
+    
+    .navbar-list li {
+    width:100%
+    }
+    
+    .about {
+    display:block
+    }
+    
+    .hero {
+    margin-top:200px
+    }
+    
+    .experience {
+    display:block
+    }
+    
+    .experience ul {
+    margin-left:0
+    }
+    
+    .showcase {
+    display:block
+    }
+    .showcase h2 {
+        margin-left: 80px;
+    }
+    }
